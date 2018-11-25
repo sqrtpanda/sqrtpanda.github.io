@@ -1,0 +1,110 @@
+body {
+    /*font-family: "Avenir Next";*/
+    font-family: 'Comfortaa', cursive; 
+    background-color: #acdbda;
+    /*background-image: url("./polygon.jpg");*/
+}
+
+li {
+    list-style: none;
+}
+
+.header{
+    background-color: #000050;
+    color: #fff;
+    /*height: calc(50px + 3vw);*/
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.header-logo img{
+    float: left;
+    width: calc(25px + 3vw);
+    height: calc(25px + 3vw);
+    margin: 15px 15px;
+}
+
+.header-menu li {
+    font-size: calc(15px + 0.3vw);
+    display: flex;
+    float: left;
+    margin: 1.5vw 1vw;
+}
+
+.header-menu a{
+    text-decoration: none;
+}
+
+.header-menu li :hover {
+    transition: all 500ms 0s ease;
+    color: #ff0000;
+}
+
+.header-menu li a {
+    color: #fff;
+
+}
+
+
+.home {
+    width: 50vw;
+    margin: 45vh auto;
+    font-size:40px;
+}
+
+.home h2 {
+    color: #000;
+    }
+
+.home p {
+    color: #000;
+    }
+
+.about {
+    color: #00f;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size:40px;
+}
+
+.about h2{
+    margin:0px 0px;
+}
+
+.about p{
+    margin:0px 0px;
+    color: #000050
+}
+
+.mystuff {
+    color: #f00;
+    margin: calc(30px + 3vw) 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size:40px;
+}
+
+.mystuff h2{
+    margin:0px 0px;
+}
+
+.mystuff p{
+    margin:0px 0px;
+    color:#000050
+}
+
+.contact {
+    color: #f0f;
+    margin: 100px 0px;
+    font-size:40px;
+}
+
+.contact p{
+    color: #000050
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
