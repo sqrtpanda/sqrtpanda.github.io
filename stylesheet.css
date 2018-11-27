@@ -1,8 +1,6 @@
 body {
-    /*font-family: "Avenir Next";*/
     font-family: 'Comfortaa', cursive; 
     background-color: #acdbda;
-    /*background-image: url("./polygon.jpg");*/
 }
 
 li {
@@ -44,7 +42,6 @@ li {
 
 .header-menu li a {
     color: #fff;
-
 }
 
 
@@ -64,13 +61,12 @@ li {
 
 .about {
     color: #00f;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 100px 0px;
     font-size:40px;
 }
 
 .about h2{
-    margin:0px 0px;
+    /*margin:0px 0px;*/
 }
 
 .about p{
@@ -80,17 +76,15 @@ li {
 
 .mystuff {
     color: #f00;
-    margin: calc(30px + 3vw) 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 100px 0px;
     font-size:40px;
 }
 
 .mystuff h2{
-    margin:0px 0px;
+    /*margin:0px 0px;*/
 }
 
 .mystuff p{
-    margin:0px 0px;
     color:#000050
 }
 
@@ -107,4 +101,8 @@ li {
 .contact a{
     color: #fff;
     text-decoration: none;
+}
+
+.copylight {
+    text-align: center;
 }
