@@ -232,7 +232,7 @@ li {
 
 
 .home {
-    width: 50vw;
+    width: 730px;
     margin: 45vh auto;
     font-size:40px;
 }
@@ -253,7 +253,7 @@ li {
 }
 
 .about h2{
-    margin:0px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .about p{
@@ -269,7 +269,7 @@ li {
 }
 
 .mystuff h2{
-    margin:0px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .mystuff p{
@@ -283,7 +283,12 @@ li {
     font-size:40px;
 }
 
+.contact h2{
+    margin: 0px 0px 20px 0px;
+}
+
 .contact p{
+    margin: 0px 0px;
     color: #000050
 }
 
