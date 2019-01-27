@@ -7,14 +7,196 @@ li {
     list-style: none;
 }
 
+@keyframes opening_text {
+    0% {
+        opacity: 0;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    84%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.opening{
+    text-align: center;
+    position: fixed;
+    z-index: 102;
+    color: white;
+    width: calc(0.65 * 100vh);
+    height: calc(0.5 * 100vh);
+    margin: auto auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0;
+    font-family: 'Fredericka the Great', cursive;
+    animation-name: opening_text;
+    animation-duration: 3s;
+}
+
+.p1{
+    font-size:calc(0.08 * 100vh);
+    margin-top: 0;
+    text-indent: -2em;
+    
+}
+
+.p2{
+    font-size:calc(0.08 * 100vh);
+    text-indent: 1em;
+}
+
+.p3{
+    font-size: calc(0.06 * 100vh);
+    text-indent: 5em;
+}
+
+@keyframes opening_square1 {
+    0% {
+        right: 0px;
+        background: #1C1C1C;
+    }
+
+    50%{
+        right: 0px;
+        background: #1C1C1C;
+    }
+
+    70%{
+        right: 0px;
+        background: #046CF4;
+    }
+
+    100%{
+        right: calc(100vw + 25vh);
+        background: #046CF4;
+    }
+}
+
+@keyframes opening_square2 {
+    0% {
+        left: 0px;
+        background: #1C1C1C;
+    }
+
+    50%{
+        background: #1C1C1C;
+    }
+
+    70%{
+        left: 0px;
+        background: #046CF4;
+    }
+
+    100%{
+        left: calc(100vw + 25vh);
+        background: #046CF4;
+    }
+}
+
+@keyframes opening_circle1{
+    0%{
+        background: #1C1C1C;
+        right: -25vh;
+    }
+
+    50%{
+        background: #1C1C1C;
+        right: -25vh;
+    }
+
+    70%{
+        background: #046CF4;
+        right: -25vh;
+    }
+
+    100%{
+        background: #046CF4;
+        right: 100vw;
+    }
+}
+
+@keyframes opening_circle2{
+    0%{
+        background: #1C1C1C;
+        left: -25vh;
+    }
+
+    50%{
+        background: #1C1C1C;
+        left: -25vh;
+    }
+    
+    70%{
+        background: #046CF4;
+        left: -25vh;
+    }
+
+    100%{
+        background: #046CF4;
+        left: 100vw;
+    }
+}
+
+.square1{
+    z-index: 100;
+    height: 50vh;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    animation-name: opening_square1;
+    animation-duration: 6s;
+}
+
+.square2{
+    z-index: 100;
+    height: 50vh;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    animation-name: opening_square2;
+    animation-duration: 6s;
+}
+
+.circle1{
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    z-index: 101;
+    top: 0px;
+    animation-name: opening_circle1;
+    animation-duration: 6s;
+}
+
+.circle2{
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    z-index: 101;
+    bottom: 0px;
+    animation-name: opening_circle2;
+    animation-duration: 6s;
+}
+
 .header{
     background-color: #000050;
     color: #fff;
     /*height: calc(50px + 3vw);*/
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .header-logo img{
@@ -42,6 +224,7 @@ li {
 
 .header-menu li a {
     color: #fff;
+
 }
 
 
@@ -61,13 +244,14 @@ li {
 
 .about {
     color: #00f;
-    margin: 100px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-size:40px;
 }
 
-/*.about h2{
+.about h2{
     margin:0px 0px;
-}*/
+}
 
 .about p{
     margin:0px 0px;
@@ -76,15 +260,17 @@ li {
 
 .mystuff {
     color: #f00;
-    margin: 100px 0px;
+    margin: calc(30px + 3vw) 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     font-size:40px;
 }
 
-/*.mystuff h2{
+.mystuff h2{
     margin:0px 0px;
-}*/
+}
 
 .mystuff p{
+    margin:0px 0px;
     color:#000050
 }
 
@@ -101,8 +287,4 @@ li {
 .contact a{
     color: #fff;
     text-decoration: none;
-}
-
-.copylight {
-    text-align: center;
 }
