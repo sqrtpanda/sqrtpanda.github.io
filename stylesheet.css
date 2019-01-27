@@ -105,6 +105,7 @@ li {
 
 @keyframes opening_circle1{
     0%{
+        z-index: 100;
         background: #1C1C1C;
         right: -25vh;
     }
@@ -120,6 +121,7 @@ li {
     }
 
     100%{
+        z-index: 100;
         background: #046CF4;
         right: 100vw;
     }
@@ -127,6 +129,7 @@ li {
 
 @keyframes opening_circle2{
     0%{
+        z-index: 100;
         background: #1C1C1C;
         left: -25vh;
     }
@@ -142,6 +145,7 @@ li {
     }
 
     100%{
+        z-index: 100;
         background: #046CF4;
         left: 100vw;
     }
@@ -172,7 +176,7 @@ li {
     width: 50vh;
     height: 50vh;
     border-radius: 25vh;
-    z-index: 101;
+    z-index: -100;
     top: 0px;
     animation-name: opening_circle1;
     animation-duration: 6s;
@@ -183,7 +187,7 @@ li {
     width: 50vh;
     height: 50vh;
     border-radius: 25vh;
-    z-index: 101;
+    z-index: -100;
     bottom: 0px;
     animation-name: opening_circle2;
     animation-duration: 6s;
@@ -288,3 +292,7 @@ li {
     color: #fff;
     text-decoration: none;
 }
+
+.copylight {
+    text-align: center;
+} 
