@@ -1,27 +1,32 @@
 body {
-    font-family: 'Comfortaa', cursive; 
+    font-family: 'Quicksand', sans-serif;
     background-color: #acdbda;
-}
-
-li {
-    list-style: none;
 }
 
 @keyframes opening_text {
     0% {
+        visibility:hidden;
+        opacity: 0;
+    }
+
+    1% {
+        visibility:visible;
         opacity: 0;
     }
 
     16% {
         opacity: 1;
+        visibility:visible;
     }
 
     84%{
         opacity: 1;
+        visibility:visible;
     }
 
     100% {
         opacity: 0;
+        visibility:hidden;
     }
 }
 
@@ -41,8 +46,8 @@ li {
     font-family: 'Fredericka the Great', cursive;
     animation-name: opening_text;
     animation-duration: 3s;
+    visibility:hidden;
 }
-
 .p1{
     font-size:calc(0.08 * 100vh);
     margin-top: 0;
@@ -193,110 +198,14 @@ li {
     animation-duration: 6s;
 }
 
-.header{
-    background-color: #000050;
-    color: #fff;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-.header-logo img{
-    float: left;
-    width: calc(25px + 3vw);
-    height: calc(25px + 3vw);
-    margin: 15px 15px;
-}
-
-.header-menu li {
-    font-size: calc(15px + 0.3vw);
-    display: flex;
-    float: left;
-    margin: 1.5vw 1vw;
-}
-
-.header-menu a{
-    text-decoration: none;
-}
-
-.header-menu li :hover {
-    transition: all 500ms 0s ease;
-    color: #ff0000;
-}
-
-.header-menu li a {
-    color: #fff;
+.page{
+    padding: 15px 50px;
+    border-left:7px solid black;
+    font-family:'Quicksand', sans-serif;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    font-size: 500%;
 
 }
-
-
-.home {
-    width: 730px;
-    margin: 45vh auto;
-    font-size:40px;
-}
-
-.home h2 {
-    color: #000;
-    }
-
-.home p {
-    color: #000;
-    }
-
-.about {
-    color: #00f;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    font-size:40px;
-}
-
-.about h2{
-    margin: 0px 0px 20px 0px;
-}
-
-.about p{
-    margin:0px 0px;
-    color: #000050
-}
-
-.mystuff {
-    color: #f00;
-    margin: calc(30px + 3vw) 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    font-size:40px;
-}
-
-.mystuff h2{
-    margin: 0px 0px 20px 0px;
-}
-
-.mystuff p{
-    margin:0px 0px;
-    color:#000050
-}
-
-.contact {
-    color: #f0f;
-    margin: 100px 0px;
-    font-size:40px;
-}
-
-.contact h2{
-    margin: 0px 0px 20px 0px;
-}
-
-.contact p{
-    margin: 0px 0px;
-    color: #000050
-}
-
-.contact a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.copylight {
-    text-align: center;
-} 
