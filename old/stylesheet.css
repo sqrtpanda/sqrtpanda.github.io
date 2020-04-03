@@ -1,0 +1,302 @@
+body {
+    font-family: 'Comfortaa', cursive; 
+    background-color: #acdbda;
+}
+
+li {
+    list-style: none;
+}
+
+@keyframes opening_text {
+    0% {
+        opacity: 0;
+    }
+
+    16% {
+        opacity: 1;
+    }
+
+    84%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.opening{
+    text-align: center;
+    position: fixed;
+    z-index: 102;
+    color: white;
+    width: calc(0.65 * 100vh);
+    height: calc(0.5 * 100vh);
+    margin: auto auto;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0;
+    font-family: 'Fredericka the Great', cursive;
+    animation-name: opening_text;
+    animation-duration: 3s;
+}
+
+.p1{
+    font-size:calc(0.08 * 100vh);
+    margin-top: 0;
+    text-indent: -2em;
+    
+}
+
+.p2{
+    font-size:calc(0.08 * 100vh);
+    text-indent: 1em;
+}
+
+.p3{
+    font-size: calc(0.06 * 100vh);
+    text-indent: 5em;
+}
+
+@keyframes opening_square1 {
+    0% {
+        right: 0px;
+        background: #1C1C1C;
+    }
+
+    50%{
+        right: 0px;
+        background: #1C1C1C;
+    }
+
+    70%{
+        right: 0px;
+        background: #046CF4;
+    }
+
+    100%{
+        right: calc(100vw + 25vh);
+        background: #046CF4;
+    }
+}
+
+@keyframes opening_square2 {
+    0% {
+        left: 0px;
+        background: #1C1C1C;
+    }
+
+    50%{
+        background: #1C1C1C;
+    }
+
+    70%{
+        left: 0px;
+        background: #046CF4;
+    }
+
+    100%{
+        left: calc(100vw + 25vh);
+        background: #046CF4;
+    }
+}
+
+@keyframes opening_circle1{
+    0%{
+        z-index: 100;
+        background: #1C1C1C;
+        right: -25vh;
+    }
+
+    50%{
+        background: #1C1C1C;
+        right: -25vh;
+    }
+
+    70%{
+        background: #046CF4;
+        right: -25vh;
+    }
+
+    100%{
+        z-index: 100;
+        background: #046CF4;
+        right: 100vw;
+    }
+}
+
+@keyframes opening_circle2{
+    0%{
+        z-index: 100;
+        background: #1C1C1C;
+        left: -25vh;
+    }
+
+    50%{
+        background: #1C1C1C;
+        left: -25vh;
+    }
+    
+    70%{
+        background: #046CF4;
+        left: -25vh;
+    }
+
+    100%{
+        z-index: 100;
+        background: #046CF4;
+        left: 100vw;
+    }
+}
+
+.square1{
+    z-index: 100;
+    height: 50vh;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    animation-name: opening_square1;
+    animation-duration: 6s;
+}
+
+.square2{
+    z-index: 100;
+    height: 50vh;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    animation-name: opening_square2;
+    animation-duration: 6s;
+}
+
+.circle1{
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    z-index: -100;
+    top: 0px;
+    animation-name: opening_circle1;
+    animation-duration: 6s;
+}
+
+.circle2{
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 25vh;
+    z-index: -100;
+    bottom: 0px;
+    animation-name: opening_circle2;
+    animation-duration: 6s;
+}
+
+.header{
+    background-color: #000050;
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.header-logo img{
+    float: left;
+    width: calc(25px + 3vw);
+    height: calc(25px + 3vw);
+    margin: 15px 15px;
+}
+
+.header-menu li {
+    font-size: calc(15px + 0.3vw);
+    display: flex;
+    float: left;
+    margin: 1.5vw 1vw;
+}
+
+.header-menu a{
+    text-decoration: none;
+}
+
+.header-menu li :hover {
+    transition: all 500ms 0s ease;
+    color: #ff0000;
+}
+
+.header-menu li a {
+    color: #fff;
+
+}
+
+
+.home {
+    width: 730px;
+    margin: 45vh auto;
+    font-size:40px;
+}
+
+.home h2 {
+    color: #000;
+    }
+
+.home p {
+    color: #000;
+    }
+
+.about {
+    color: #00f;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size:40px;
+}
+
+.about h2{
+    margin: 0px 0px 20px 0px;
+}
+
+.about p{
+    margin:0px 0px;
+    color: #000050
+}
+
+.mystuff {
+    color: #f00;
+    margin: calc(30px + 3vw) 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size:40px;
+}
+
+.mystuff h2{
+    margin: 0px 0px 20px 0px;
+}
+
+.mystuff p{
+    margin:0px 0px;
+    color:#000050
+}
+
+.contact {
+    color: #f0f;
+    margin: 100px 0px;
+    font-size:40px;
+}
+
+.contact h2{
+    margin: 0px 0px 20px 0px;
+}
+
+.contact p{
+    margin: 0px 0px;
+    color: #000050
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.copylight {
+    text-align: center;
+} 
