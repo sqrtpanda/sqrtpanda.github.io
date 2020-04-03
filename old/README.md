@@ -1,4 +1,4 @@
 # sqrt-panda.github.io
-https://sqrt-panda.github.io/
+https://sqrt-panda.github.io/old
 
-HTMLとCSSの練習も兼ねて作ってるのでコードが整理されてない...
+旧バージョン
